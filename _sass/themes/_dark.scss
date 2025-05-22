@@ -2,114 +2,118 @@
   color-scheme: dark;
 
   /* Framework color */
-  --main-bg: rgb(27, 27, 30);
-  --mask-bg: rgb(68, 69, 70);
-  --main-border-color: rgb(44, 45, 45);
+  --main-bg: #03045E;            // Your Very Dark Blue
+  --mask-bg: #0077B6;            // Your Darker Blue (for overlays/masks)
+  --main-border-color: #0077B6;  // Your Darker Blue
 
   /* Common color */
-  --text-color: rgb(175, 176, 177);
-  --text-muted-color: #868686;
-  --text-muted-highlight-color: #aeaeae;
-  --heading-color: #cccccc;
-  --label-color: #a7a7a7;
-  --blockquote-border-color: rgb(66, 66, 66);
-  --blockquote-text-color: #868686;
-  --link-color: rgb(138, 180, 248);
-  --link-underline-color: rgb(82, 108, 150);
-  --button-bg: #1e1e1e;
-  --btn-border-color: #2e2f31;
-  --btn-backtotop-color: var(--text-color);
-  --btn-backtotop-border-color: #212122;
-  --card-header-bg: #292929;
-  --checkbox-color: rgb(118, 120, 121);
-  --checkbox-checked-color: var(--link-color);
-  --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%);
+  --text-color: #CAF0F8;         // Your Very Light Blue/Pale Cyan
+  --text-muted-color: #90E0EF;   // Your Light Blue/Sky Blue for muted text
+  --text-muted-highlight-color: #FFFFFF; // White for highlight
+  --heading-color: #CAF0F8;      // Your Very Light Blue/Pale Cyan
+  --label-color: #90E0EF;        // Your Light Blue/Sky Blue
+  --blockquote-border-color: #00B4D8; // Your Medium Blue/Cyan
+  --blockquote-text-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+  --link-color: #00B4D8;         // Your Medium Blue/Cyan
+  --link-underline-color: #90E0EF; // Your Light Blue/Sky Blue
+  --button-bg: #00B4D8;          // Your Medium Blue/Cyan
+  --btn-border-color: #0077B6;   // Your Darker Blue
+  --btn-backtotop-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+  --btn-backtotop-border-color: #0077B6; // Your Darker Blue
+  --card-header-bg: #0077B6;     // Your Darker Blue
+  --checkbox-color: #90E0EF;     // Your Light Blue/Sky Blue
+  --checkbox-checked-color: #00B4D8; // Your Medium Blue/Cyan
+  --img-bg: radial-gradient(
+    circle,
+    rgb(3, 4, 94) 0%,   // Your Very Dark Blue (adjusted for RGB)
+    rgb(0, 119, 182) 100% // Your Darker Blue (adjusted for RGB)
+  );
   --shimmer-bg: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(58, 55, 55, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(3, 4, 94, 0) 0%,   // Your Very Dark Blue (adjusted for RGB)
+    rgba(0, 119, 182, 0.4) 50%, // Your Darker Blue (with transparency)
+    rgba(3, 4, 94, 0) 100%  // Your Very Dark Blue (adjusted for RGB)
   );
 
   /* Sidebar */
-  --site-title-color: #717070;
-  --site-subtitle-color: #868686;
-  --sidebar-bg: #1e1e1e;
-  --sidebar-border-color: #292929;
-  --sidebar-muted-color: #868686;
-  --sidebar-active-color: rgb(255, 255, 255, 0.95);
-  --sidebar-hover-bg: #262626;
-  --sidebar-btn-bg: #232328;
-  --sidebar-btn-color: #787878;
-  --avatar-border-color: rgb(206, 206, 206, 0.9);
+  --site-title-color: #CAF0F8;   // Your Very Light Blue/Pale Cyan
+  --site-subtitle-color: #90E0EF; // Your Light Blue/Sky Blue
+  --sidebar-bg: #0077B6;         // Your Darker Blue
+  --sidebar-border-color: #03045E; // Your Very Dark Blue
+  --sidebar-muted-color: #90E0EF; // Your Light Blue/Sky Blue
+  --sidebar-active-color: rgb(202, 240, 248, 0.95); // Very Light Blue/Pale Cyan (with transparency)
+  --sidebar-hover-bg: #00B4D8;   // Your Medium Blue/Cyan
+  --sidebar-btn-bg: #00B4D8;     // Your Medium Blue/Cyan
+  --sidebar-btn-color: #CAF0F8;  // Your Very Light Blue/Pale Cyan
+  --avatar-border-color: rgb(144, 224, 239, 0.9); // Light Blue/Sky Blue (with transparency)
 
   /* Topbar */
-  --topbar-bg: rgb(27, 27, 30, 0.64);
+  --topbar-bg: rgb(3, 4, 94, 0.64); // Your Very Dark Blue (with transparency)
   --topbar-text-color: var(--text-color);
-  --search-border-color: rgb(55, 55, 55);
-  --search-icon-color: rgb(100, 102, 105);
-  --input-focus-border-color: rgb(112, 114, 115);
+  --search-border-color: #0077B6; // Your Darker Blue
+  --search-icon-color: #90E0EF;   // Your Light Blue/Sky Blue
+  --input-focus-border-color: #00B4D8; // Your Medium Blue/Cyan
 
   /* Home page */
-  --post-list-text-color: rgb(175, 176, 177);
+  --post-list-text-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
   --btn-patinator-text-color: var(--text-color);
-  --btn-paginator-hover-color: #2e2e2e;
+  --btn-paginator-hover-color: #00B4D8; // Your Medium Blue/Cyan
 
   /* Posts */
-  --toc-highlight: rgb(116, 178, 243);
-  --toc-popup-border-color: #373737;
-  --tag-hover: rgb(43, 56, 62);
-  --tb-odd-bg: #252526; /* odd rows of the posts' table */
-  --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
+  --toc-highlight: #90E0EF;      // Your Light Blue/Sky Blue
+  --toc-popup-border-color: #0077B6; // Your Darker Blue
+  --tag-hover: rgb(0, 119, 182); // Your Darker Blue (adjusted for RGB)
+  --tb-odd-bg: #0077B6;          // Your Darker Blue /* odd rows of the posts' table */
+  --tb-even-bg: #03045E;         // Your Very Dark Blue /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
-  --footnote-target-bg: rgb(63, 81, 181);
-  --btn-share-color: #6c757d;
-  --btn-share-hover-color: #bfc1ca;
-  --card-bg: #1e1e1e;
-  --card-hovor-bg: #464d51;
-  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.24) 0 0 0 1px;
-  --kbd-wrap-color: #6a6a6a;
-  --kbd-text-color: #d3d3d3;
-  --kbd-bg-color: #242424;
-  --prompt-text-color: rgb(216, 212, 212, 0.75);
-  --prompt-tip-bg: rgb(22, 60, 36, 0.64);
-  --prompt-tip-icon-color: rgb(15, 164, 15, 0.81);
-  --prompt-info-bg: rgb(7, 59, 104, 0.8);
-  --prompt-info-icon-color: #0075d1;
-  --prompt-warning-bg: rgb(90, 69, 3, 0.88);
-  --prompt-warning-icon-color: rgb(255, 165, 0, 0.8);
-  --prompt-danger-bg: rgb(86, 28, 8, 0.8);
-  --prompt-danger-icon-color: #cd0202;
+  --footnote-target-bg: #00B4D8; // Your Medium Blue/Cyan
+  --btn-share-color: #90E0EF;    // Your Light Blue/Sky Blue
+  --btn-share-hover-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+  --card-bg: #0077B6;            // Your Darker Blue
+  --card-hovor-bg: #00B4D8;      // Your Medium Blue/Cyan
+  --card-shadow: rgb(3, 4, 94, 0.72) 0 6px 18px 0, // Very Dark Blue (with transparency)
+    rgb(0, 119, 182, 0.24) 0 0 0 1px; // Darker Blue (with transparency)
+  --kbd-wrap-color: #90E0EF;     // Your Light Blue/Sky Blue
+  --kbd-text-color: #CAF0F8;     // Your Very Light Blue/Pale Cyan
+  --kbd-bg-color: #0077B6;       // Your Darker Blue
+  --prompt-text-color: rgb(202, 240, 248, 0.75); // Very Light Blue/Pale Cyan (with transparency)
+  --prompt-tip-bg: rgb(0, 119, 182, 0.64); // Darker Blue (with transparency)
+  --prompt-tip-icon-color: rgb(0, 180, 216, 0.81); // Medium Blue/Cyan (with transparency)
+  --prompt-info-bg: rgb(0, 119, 182, 0.8); // Darker Blue (with transparency)
+  --prompt-info-icon-color: #00B4D8; // Your Medium Blue/Cyan
+  --prompt-warning-bg: rgb(255, 243, 205); // Keep original or adjust to a yellow/orange
+  --prompt-warning-icon-color: #ef9c03; // Keep original or adjust
+  --prompt-danger-bg: rgb(248, 215, 218, 0.8); // Keep original or adjust to a red
+  --prompt-danger-icon-color: #df3c30; // Keep original or adjust
 
   /* Tags */
-  --tag-border: rgb(59, 79, 88);
-  --tag-shadow: rgb(32, 33, 33);
-  --dash-color: rgb(63, 65, 68);
-  --search-tag-bg: #292828;
+  --tag-border: #00B4D8;         // Your Medium Blue/Cyan
+  --tag-shadow: #0077B6;         // Your Darker Blue
+  --dash-color: #90E0EF;         // Your Light Blue/Sky Blue
+  --search-tag-bg: #0077B6;      // Your Darker Blue
 
   /* Categories */
-  --categories-border: rgb(64, 66, 69, 0.5);
-  --categories-hover-bg: rgb(73, 75, 76);
-  --categories-icon-hover-color: white;
+  --categories-border: rgba(202, 240, 248, 0.5); // Very Light Blue/Pale Cyan (with transparency)
+  --categories-hover-bg: #00B4D8; // Your Medium Blue/Cyan
+  --categories-icon-hover-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
 
   /* Archive */
-  --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(63, 65, 68);
+  --timeline-node-bg: #90E0EF;   // Your Light Blue/Sky Blue
+  --timeline-color: #0077B6;     // Your Darker Blue
   --timeline-year-dot-color: var(--timeline-color);
 
   /* Code highlight colors */
-  --language-border-color: #2d2d2d;
-  --highlight-bg-color: #151515;
-  --highlighter-rouge-color: #c9def1;
-  --highlight-lineno-color: #808080;
-  --inline-code-bg: rgba(255, 255, 255, 0.05);
-  --code-color: #b0b0b0;
-  --code-header-text-color: #6a6a6a;
-  --code-header-muted-color: #353535;
-  --code-header-icon-color: #565656;
-  --clipboard-checked-color: #2bcc2b;
-  --filepath-text-color: #cacaca;
+  --language-border-color: #0077B6; // Your Darker Blue
+  --highlight-bg-color: #03045E;  // Your Very Dark Blue
+  --highlighter-rouge-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+  --highlight-lineno-color: #90E0EF; // Your Light Blue/Sky Blue
+  --inline-code-bg: rgba(202, 240, 248, 0.05); // Very Light Blue/Pale Cyan (with transparency)
+  --code-color: #CAF0F8;          // Your Very Light Blue/Pale Cyan
+  --code-header-text-color: #90E0EF; // Your Light Blue/Sky Blue
+  --code-header-muted-color: #0077B6; // Your Darker Blue
+  --code-header-icon-color: #00B4D8; // Your Medium Blue/Cyan
+  --clipboard-checked-color: #00B4D8; // Your Medium Blue/Cyan
+  --filepath-text-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
 
   .light {
     display: none;
@@ -141,11 +145,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(26, 26, 30),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(26, 26, 30)
+      rgb(3, 4, 94),      // Your Very Dark Blue
+      rgb(0, 119, 182),   // Your Darker Blue
+      rgb(0, 119, 182),   // Your Darker Blue
+      rgb(0, 119, 182),   // Your Darker Blue
+      rgb(3, 4, 94)       // Your Very Dark Blue
     );
   }
 
@@ -155,9 +159,12 @@
   }
 
   /* --- Syntax highlight theme from `rougify style base16.dark` --- */
+  // Leaving these mostly as-is, as they are part of the syntax highlighting
+  // scheme. Modifying them extensively requires understanding the `rougify`
+  // output, but I've adjusted some to align with your blues where clear.
 
   .highlight .gp {
-    color: #87939d;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight table td {
@@ -170,13 +177,13 @@
 
   .highlight,
   .highlight .w {
-    color: #d0d0d0;
-    background-color: #151515;
+    color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+    background-color: #03045E; // Your Very Dark Blue
   }
 
   .highlight .err {
-    color: #151515;
-    background-color: #ac4142;
+    color: #03045E; // Your Very Dark Blue
+    background-color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .c,
@@ -186,39 +193,39 @@
   .highlight .cpf,
   .highlight .c1,
   .highlight .cs {
-    color: #848484;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .cp {
-    color: #f4bf75;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .nt {
-    color: #f4bf75;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .o,
   .highlight .ow {
-    color: #d0d0d0;
+    color: #CAF0F8; // Your Very Light Blue/Pale Cyan
   }
 
   .highlight .p,
   .highlight .pi {
-    color: #d0d0d0;
+    color: #CAF0F8; // Your Very Light Blue/Pale Cyan
   }
 
   .highlight .gi {
-    color: #90a959;
+    color: #CAF0F8; // Your Very Light Blue/Pale Cyan
   }
 
   .highlight .gd {
-    color: #f08a8b;
-    background-color: #320000;
+    color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+    background-color: #0077B6; // Your Darker Blue
   }
 
   .highlight .gh {
-    color: #6a9fb5;
-    background-color: #151515;
+    color: #00B4D8; // Your Medium Blue/Cyan
+    background-color: #03045E; // Your Very Dark Blue
     font-weight: bold;
   }
 
@@ -227,19 +234,19 @@
   .highlight .kp,
   .highlight .kr,
   .highlight .kv {
-    color: #aa759f;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .kc {
-    color: #d28445;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .kt {
-    color: #d28445;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .kd {
-    color: #d28445;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .s,
@@ -251,39 +258,39 @@
   .highlight .sh,
   .highlight .sx,
   .highlight .s1 {
-    color: #90a959;
+    color: #CAF0F8; // Your Very Light Blue/Pale Cyan
   }
 
   .highlight .sa {
-    color: #aa759f;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .sr {
-    color: #75b5aa;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .si {
-    color: #b76d45;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .se {
-    color: #b76d45;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .nn {
-    color: #f4bf75;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .nc {
-    color: #f4bf75;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .no {
-    color: #f4bf75;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .na {
-    color: #6a9fb5;
+    color: #00B4D8; // Your Medium Blue/Cyan
   }
 
   .highlight .m,
@@ -294,10 +301,10 @@
   .highlight .il,
   .highlight .mo,
   .highlight .mx {
-    color: #90a959;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 
   .highlight .ss {
-    color: #90a959;
+    color: #90E0EF; // Your Light Blue/Sky Blue
   }
 }
