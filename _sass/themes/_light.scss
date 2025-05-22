@@ -1,6 +1,6 @@
 @mixin styles {
   /* Framework color */
-  --main-bg: #CAF0F8;             // Your Very Light Blue/Pale Cyan
+  --main-bg: #F5F5F5;             // Changed to a soft light gray for background
   --main-color: #03045E;          // Your Very Dark Blue (for main text)
   --main-border-color: #90E0EF;   // Your Light Blue/Sky Blue
 
@@ -23,30 +23,30 @@
   --checkbox-checked-color: #00B4D8; // Your Medium Blue/Cyan
   --img-bg: radial-gradient(
     circle,
-    rgb(202, 240, 248) 0%,   // Your Very Light Blue/Pale Cyan (adjusted for RGB)
-    rgb(144, 224, 239) 100%  // Your Light Blue/Sky Blue (adjusted for RGB)
+    rgb(245, 245, 245) 0%,   // Adjusted to match new main-bg
+    rgb(220, 220, 220) 100%  // Slightly darker gray for gradient end
   );
   --shimmer-bg: linear-gradient(
     90deg,
-    rgba(202, 240, 248, 0) 0%,   // Your Very Light Blue/Pale Cyan (adjusted for RGB)
-    rgba(144, 224, 239, 1) 50%,  // Your Light Blue/Sky Blue (adjusted for RGB)
-    rgba(202, 240, 248, 0) 100%  // Your Very Light Blue/Pale Cyan (adjusted for RGB)
+    rgba(245, 245, 245, 0) 0%,   // Adjusted to match new main-bg
+    rgba(220, 220, 220, 1) 50%,  // Adjusted to match new main-bg
+    rgba(245, 245, 245, 0) 100%  // Adjusted to match new main-bg
   );
 
   /* Sidebar */
   --site-title-color: #03045E;    // Your Very Dark Blue
   --site-subtitle-color: #0077B6; // Your Darker Blue
-  --sidebar-bg: #90E0EF;          // Your Light Blue/Sky Blue
-  --sidebar-border-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+  --sidebar-bg: #CAF0F8;          // Changed to your Very Light Blue/Pale Cyan (for sidebar)
+  --sidebar-border-color: #90E0EF; // Your Light Blue/Sky Blue
   --sidebar-muted-color: #03045E; // Your Very Dark Blue
   --sidebar-active-color: #00B4D8; // Your Medium Blue/Cyan
   --sidebar-hover-bg: rgb(0, 119, 182, 0.64); // Your Darker Blue (with transparency)
-  --sidebar-btn-bg: #00B4D8;      // **Changed to Medium Blue/Cyan for better contrast**
-  --sidebar-btn-color: #FFFFFF;   // **Changed to WHITE for clarity**
+  --sidebar-btn-bg: #00B4D8;      // Medium Blue/Cyan
+  --sidebar-btn-color: #FFFFFF;   // WHITE
   --avatar-border-color: #00B4D8; // Your Medium Blue/Cyan
 
   /* Topbar */
-  --topbar-bg: rgb(202, 240, 248, 0.7); // Your Very Light Blue/Pale Cyan (with transparency)
+  --topbar-bg: rgb(245, 245, 245, 0.7); // Adjusted to new main-bg (with transparency)
   --topbar-text-color: #03045E;    // Your Very Dark Blue
   --search-border-color: #90E0EF;  // Your Light Blue/Sky Blue
   --search-icon-color: #0077B6;    // Your Darker Blue
@@ -62,13 +62,13 @@
   --toc-popup-border-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
   --btn-share-color: #0077B6;      // Your Darker Blue
   --btn-share-hover-color: #00B4D8; // Your Medium Blue/Cyan
-  --card-bg: #CAF0F8;             // Your Very Light Blue/Pale Cyan
-  --card-hovor-bg: #90E0EF;       // Your Light Blue/Sky Blue
+  --card-bg: #FFFFFF;             // Changed to white for card background
+  --card-hovor-bg: #E0E0E0;       // Slightly darker white for card hover
   --card-shadow: rgb(3, 4, 94, 0.05) 0 2px 6px 0, // Your Very Dark Blue (with transparency)
     rgba(0, 119, 182, 0.15) 0 0 0 1px; // Your Darker Blue (with transparency)
   --footnote-target-bg: #90E0EF;   // Your Light Blue/Sky Blue
-  --tb-odd-bg: #CAF0F8;            // Your Very Light Blue/Pale Cyan
-  --tb-border-color: #90E0EF;     // Your Light Blue/Sky Blue
+  --tb-odd-bg: #F8F8F8;            // Very light gray for table rows
+  --tb-border-color: #E0E0E0;     // Slightly darker gray for table borders
   --dash-color: #0077B6;          // Your Darker Blue
   --kbd-wrap-color: #0077B6;      // Your Darker Blue
   --kbd-text-color: var(--text-color);
@@ -87,7 +87,7 @@
   --tag-border: #0077B6;          // Your Darker Blue
   --tag-shadow: #00B4D8;          // Your Medium Blue/Cyan
   --tag-hover: rgb(0, 119, 182);  // Your Darker Blue (adjusted for RGB)
-  --search-tag-bg: #CAF0F8;       // Your Very Light Blue/Pale Cyan
+  --search-tag-bg: #F0F0F0;       // Light gray for search tag bg
 
   /* Categories */
   --categories-border: rgba(0, 0, 0, 0.125); // Can remain default or adjust to a dark blue rgba
@@ -101,7 +101,7 @@
 
   /* --- Custom code light mode colors --- */
   --language-border-color: #90E0EF; // Your Light Blue/Sky Blue
-  --highlight-bg-color: #CAF0F8;   // Your Very Light Blue/Pale Cyan
+  --highlight-bg-color: #F8F8F8;   // Light gray for code highlight background
   --highlighter-rouge-color: #03045E; // Your Very Dark Blue
   --highlight-lineno-color: #0077B6; // Your Darker Blue
   --inline-code-bg: rgba(3, 4, 94, 0.05); // Your Very Dark Blue (with transparency)
@@ -120,10 +120,6 @@
   }
 
   /* --- Syntax highlight theme from `rougify style github` --- */
-  // It's generally best to keep syntax highlighting consistent with a known theme (like GitHub's).
-  // Modifying these can be complex. I'll leave them as they are to avoid breaking code readability.
-  // If you want to change these, we can tackle them separately.
-
   .highlight table td {
     padding: 5px;
   }
@@ -135,7 +131,7 @@
   .highlight,
   .highlight .w {
     color: #03045E; // Your Very Dark Blue
-    background-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+    background-color: #F8F8F8; // Light gray for syntax highlight background
   }
 
   .highlight .k,
@@ -154,7 +150,7 @@
 
   .highlight .gd {
     color: #03045E; // Your Very Dark Blue
-    background-color: #90E0EF; // Your Light Blue/Sky Blue
+    background-color: #E0E0E0; // Slightly darker gray
   }
 
   .highlight .nb {
@@ -187,7 +183,7 @@
 
   .highlight .gi {
     color: #03045E; // Your Very Dark Blue
-    background-color: #CAF0F8; // Your Very Light Blue/Pale Cyan
+    background-color: #E0E0E0; // Slightly darker gray
   }
 
   .highlight .kc {
